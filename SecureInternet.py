@@ -15,7 +15,8 @@ class SI:
         bg_lb1.place(x=0, y=0, relwidth=1, relheight=1)
         SI_Frame=Frame(self.root,bg="steel blue")
         SI_Frame.place(x=330,y=150,)
-        title = Label(SI_Frame, text="Welcome to Secure Internet", font=("Industry Inc Detail Fill", 40, "bold"),bg="steel blue", fg="light cyan", bd=0, relief=GROOVE)
+        title = Label(SI_Frame, text="Welcome to Secure Internet", font=("Industry Inc Detail Fill", 40, "bold"),\
+                      bg="steel blue", fg="light cyan", bd=0, relief=GROOVE)
         title.grid(row=0,columnspan=2)
         l2=Label(SI_Frame,text="Basis of Website Filtering", font=("Industry Inc Detail Fill", 18, "bold") \
         ,bg="steel blue", fg="light cyan", bd=0, relief=GROOVE,width=50)

@@ -47,7 +47,8 @@ class Signup_system:
                 label_sex = Label(Login_Frame, text="Sex", image=self.user_icon, compound=LEFT,font=("Industry Inc Detail Fill", 20, "bold"), bg="white")
                 label_sex.grid(row=4, column=0, padx=20, pady=10)
                 sex_entry= Entry(Login_Frame, bd=5, textvariable=self.sex, relief=GROOVE, font=("", 15)).grid(row=4, column=1, padx=20)
-                btn_signup=Button(Login_Frame,command=lambda:self.signup(oldmaster),text="SignUp",width=15,font=("Industry Inc Detail Fill", 20, "bold"),bg="skyblue",fg="white").grid(row=7,column=1,pady=10)
+                btn_signup=Button(Login_Frame,command=lambda:self.signup(oldmaster),text="SignUp",width=15,\
+                                  font=("Industry Inc Detail Fill", 20, "bold"),bg="skyblue",fg="white").grid(row=7,column=1,pady=10)
 
 
             def signup(self,oldmaster):

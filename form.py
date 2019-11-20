@@ -37,8 +37,10 @@ class login_system:
                 labelpass = Label(Login_Frame, text="Password", image=self.pass_icon,compound=LEFT,font=("Industry Inc Detail Fill", 20, "bold"), bg="white")
                 labelpass.grid(row=3,column=0,padx=20,pady=10)
                 pass_entry = Entry(Login_Frame, bd=5,textvariable=self.password, relief=GROOVE, font=("", 15)).grid(row=3, column=1, padx=20)
-                btn_login=Button(Login_Frame,command=self.login,text="Login",width=10,font=("Industry Inc Detail Fill", 20, "bold"),bg="skyblue",fg="white").grid(row=4,column=1,pady=10)
-                btn_signup = Button(Login_Frame, command=self.new, text="SignUp", width=10,font=("Industry Inc Detail Fill", 20, "bold"), bg="skyblue", fg="white").grid(row=4,columnspan=1,pady=10)
+                btn_login=Button(Login_Frame,command=self.login,text="Login",width=10,font=("Industry Inc Detail Fill", 20, "bold"),bg="skyblue",fg="white")\
+                           .grid(row=4,column=1,pady=10)
+                btn_signup = Button(Login_Frame, command=self.new, text="SignUp", width=10,font=("Industry Inc Detail Fill", 20, "bold"), bg="skyblue",\
+                                    fg="white").grid(row=4,columnspan=1,pady=10)
 
             def new(self):
                  self.root.withdraw()
